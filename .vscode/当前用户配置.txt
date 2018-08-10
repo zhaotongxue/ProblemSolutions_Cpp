@@ -1,0 +1,80 @@
+{
+    // "editor.wordWrap": "on",  
+    "editor.wordWrapColumn": 200,
+    "editor.wordWrap": "bounded",
+    "editor.fontFamily": "文泉驿微米黑",
+    // "editor.fontFamily": "微软雅黑",
+    // "editor.fontFamily": "Consolas",
+    "editor.fontSize": 20,
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "debug.allowBreakpointsEverywhere": true ,
+     "terminal.integrated.fontFamily": "黑体",
+   "terminal.integrated.letterSpacing": 0,
+   "terminal.integrated.fontSize": 14,
+    "git.enabled": false, 
+    // 同上 
+    "editor.minimap.enabled": false, // 我个人不用minimap，就是右边那个东西 
+    "editor.dragAndDrop": true, // 选中文字后，可以拖动它们调整位置。我是不需要 
+    "C_Cpp.autocomplete": "Default", 
+    "[cpp]": { 
+        "editor.quickSuggestions": true 
+    },
+         "[c]": {
+              "editor.quickSuggestions": true 
+        } ,
+        "code-runner.runInTerminal": true, //在内置终端运行
+        "code-runner.saveFileBeforeRun": true, //运行前保存
+        "code-runner.clearPreviousOutput": true, //运行前清除之前输出
+"code-runner.executorMap": { //调参
+    "c": "cd $dirWithoutTrailingSlash && gcc $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt -std=c11 -lm&& E:\\code\\c++\\exes\\$fileNameWithoutExt",
+    "cpp": "cd $dirWithoutTrailingSlash && g++ -Wall $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt -std=c++11 -lm && E:\\code\\c++\\exes\\$fileNameWithoutExt"
+},
+"code-runner.preserveFocus": true, //运行时焦点不会跳回编辑器
+    "debug.enableAllHovers": true,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.toolBarLocation": "hidden",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+// "editor.rulers": [80, 100],
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "smooth",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.statusBar.visible": true,
+    "C_Cpp.clang_format_path": "D:/LLVM/bin/clang-format.exe",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "blue",
+    "vim.easymotionMarkerForegroundColorOneChar": "yellow",
+    "vim.easymotionMarkerForegroundColorTwoChar": "white",
+    "vim.easymotionMarkerHeight":22,
+    // "vim.easymotionMarkerWidthPerChar": 8,
+    "vim.easymotionMarkerFontSize": "14",
+    "vim.easymotionMarkerYOffset":0,
+    "vim.easymotionMarkerFontFamily": "文泉驿微米黑",
+    "vim.leader":",",
+    "vim.insertModeKeyBindingsNonRecursive": [],
+    "sync.gist": "d092cc58a63587ba19a701691339e8c4",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastUpload": "2018-08-04T09:01:43.083Z",
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "none",
+    "workbench.colorTheme": "Eva Dark",
+    "git.autorefresh": false,
+    "git.autoRepositoryDetection": false,
+    "git.confirmSync": false,
+    "git.decorations.enabled": false,
+    "git.detectSubmodules": false,
+    "git.ignoreMissingGitWarning": true
+}
