@@ -10,7 +10,7 @@
 #include <iomanip>
 #include <string>
 #include <sstream>
-#define DEBUG
+// #define DEBUG
 #define charcount 256
 int count[charcount + 2];
 int num;
@@ -26,6 +26,7 @@ void sort(std::string s[], int lo, int hi, int depth)
     if (lo >= hi)
         return;
     std::string st[hi - lo + 1];
+    memset(count, 0, sizeof(count));
     //统计频率
     for (int i = lo; i <= hi; i++)
     {
@@ -63,7 +64,6 @@ void sort(std::string s[], int lo, int hi, int depth)
 }
 int main()
 {
-    memset(count, 0, sizeof(count));
     std::string strs[100];
     std::cin >> num;
     for (int i = 0; i < num; i++)
