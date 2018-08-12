@@ -75,7 +75,7 @@ int main()
     sort(strs, 0, num - 1, 0);
     for (int i = 0; i < num; i++)
     {
-        std::cout << strs[i] << std::endl;
+        std::cout << i + 1 << ":" << strs[i] << std::endl;
     }
 #ifdef DEBUG
     system("pause");
