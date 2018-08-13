@@ -9,12 +9,11 @@
 #include <set>
 #include <vector>
 using namespace std;
-// #define DEBUG
+#define DEBUG
 int main() {
     vector<int> v;
-    printf("%d",10);
-    abdc;
     v.push_back(10);
+    vector<string> strv;
     printf("%d", v.size());
 #ifdef DEBUG
     system("pause");

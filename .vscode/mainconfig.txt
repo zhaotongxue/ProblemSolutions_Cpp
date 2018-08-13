@@ -1,0 +1,401 @@
+//user setting
+{
+    "editor.wordWrapColumn": 160,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.tabCompletion": true,
+    "editor.find.autoFindInSelection": true,
+    "editor.fontFamily": "文泉驿微米黑",
+    // "editor.fontFamily": "微软雅黑",
+    // "editor.fontFamily": "Consolas",
+    "editor.fontSize": 20,
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.letterSpacing": 0,
+    "terminal.integrated.fontSize": 12,
+    "git.enabled": true,
+    "git.autofetch": false,
+    "git.path": "C:/Program Files/Git",
+    "editor.minimap.enabled": false, // 我个人不用minimap，就是右边那个东西 
+    "editor.dragAndDrop": true, // 选中文字后，可以拖动它们调整位置。我是不需要 
+    // "C_Cpp.autocomplete": "Default", 
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.formatting": "Default",
+    "C_Cpp.loggingLevel": "Debug",
+    // "C_Cpp.loggingLevel": "Information",
+    // "C_Cpp.loggingLevel": "Information",
+    // "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    // "C_Cpp.default.intelliSenseMode": "msvc-x64",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.autocomplete": "Default",
+    // "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.clang_format_path": "D:/LLVM/bin/clang-format.exe",
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4}",
+    "[cpp]": {
+        "editor.quickSuggestions": true
+    },
+    "[c]": {
+        "editor.quickSuggestions": true
+    },
+    "code-runner.saveFileBeforeRun": true, //运行前保存
+    "code-runner.clearPreviousOutput": true, //运行前清除之前输出
+    "code-runner.executorMap": { //调参
+        "c": "cd $dirWithoutTrailingSlash && gcc $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt -std=c11 -lm&& E:\\code\\c++\\exes\\$fileNameWithoutExt",
+        "cpp": "cd $dirWithoutTrailingSlash && g++ -Wall $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt -std=c++11 -lm && E:\\code\\c++\\exes\\$fileNameWithoutExt"
+    },
+    "code-runner.preserveFocus": true, //运行时焦点不会跳回编辑器
+    "debug.enableAllHovers": true,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.toolBarLocation": "hidden",
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "smooth",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.statusBar.visible": true,
+
+    "json.format.enable": false,
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "none",
+    "search.followSymlinks": false,
+    "editor.detectIndentation": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.hover.delay": 500,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.roundedSelection": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.labelFormat": "long",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.list.openMode": "singleClick",
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+    "files.defaultLanguage": "cpp",
+    "files.trimFinalNewlines": true,
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "include-autocomplete.extensions": [
+        "",
+        ".h",
+        ".hpp",
+        ".hxx",
+        ".cpp"
+    ],
+    "merge-conflict.codeLens.enabled": false,
+    "merge-conflict.decorators.enabled": false,
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.showReloadMessage": false,
+    "material-icon-theme.folders.color": "#42a5f5",
+    "workbench.iconTheme": "material-icon-theme",
+    "amVim.bindCtrlCommands": false,
+    "amVim.mimicVimSearchBehavior": false,
+    "amVim.smartRelativeLineNumbers": false,
+    // "metaGo.jumper.findInSelection": "true",
+    "metaGo.decoration.backgroundColor": "blue,blue",
+    "metaGo.decoration.backgroundOpacity": "1",
+    "metaGo.decoration.borderColor": "",
+    "metaGo.decoration.color": "#FFFF37",
+    "metaGo.decoration.fontFamily": "文泉驿微米黑",
+    "metaGo.decoration.fontSize": 14,
+    "metaGo.decoration.fontWeight": "normal",
+    "metaGo.decoration.height": 16,
+    "metaGo.decoration.width": 8,
+    // "metaGo.decoration.x": 1,
+    // "metaGo.decoration.y":  6,
+
+    // "amVim.smartRelativeLineNumbers": true
+    // "workbench.iconTheme": "vscode-icons",
+    // "vim.easymotion": true,
+    // "vim.easymotionMarkerBackgroundColor": "blue",
+    // "vim.easymotionMarkerForegroundColorOneChar": "yellow",
+    // "vim.easymotionMarkerForegroundColorTwoChar": "white",
+    // "vim.easymotionMarkerHeight": 22,
+    // //  "vim.autoSwitchInputMethod.enable": true,
+    // // "vim.easymotionMarkerWidthPerChar": 8,
+    // "vim.easymotionMarkerFontSize": "14",
+    // "vim.easymotionMarkerYOffset": 0,
+    // "vim.easymotionMarkerFontFamily": "文泉驿微米黑",
+    // "vim.leader": ",",
+    // "vim.insertModeKeyBindingsNonRecursive": [],
+    // "vim.hlsearch": true,
+
+    // "clang-format.executable": "D:\\LLVM\\bin\\clang-format.exe",
+    // "clang.completion.triggerChars": [
+    //     ".",
+    //     ":",
+    //     ">",
+    //     " ",
+    // ],
+    // "clang.completion.enable":false,
+    // "clang.diagnostic.enable": true,
+    // "clang.diagnostic.delay": 3000,
+    // "clang.executable": "clang++",
+    // "sync.gist": "d092cc58a63587ba19a701691339e8c4",
+    // "sync.host": "",
+    // "sync.pathPrefix": "",
+    // "sync.quietSync": false,
+    // "sync.askGistName": false,
+    // "sync.removeExtensions": true,
+    // "sync.syncExtensions": true,
+    // "sync.autoDownload": false,
+    // "sync.autoUpload": false,
+    // "sync.lastUpload": "2018-08-12T07:15:46.320Z",
+    // "sync.lastDownload": "",
+    // "sync.forceDownload": false,
+}
+//workspace setting
+{
+    "files.defaultLanguage": "cpp", // ctrl+N新建文件后默认的语言
+    "editor.formatOnType": false, // 输入时就进行格式化，默认触发字符较少，分号可以触发
+    "editor.snippetSuggestions": "top", // snippets代码优先显示补全
+    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
+    "code-runner.executorMap": {
+        "c": "cd $dir && clang $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c11 && E:\\code\\C++\\exes\\$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ $fileName -o E:\\code\\C++\\exes\\$fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c++17 && E:\\code\\C++\\exes\\$fileNameWithoutExt"
+    }, // 设置code runner的命令行
+    "code-runner.saveFileBeforeRun": true, // run code前保存
+    "code-runner.preserveFocus": false, // 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false
+    "code-runner.clearPreviousOutput": true, // 每次run code前清空属于code runner的终端消息
+    // "C_Cpp.clang_format_sortIncludes": true, // 格式化时调整include的顺序（按字母排序）
+    // "C_Cpp.intelliSenseEngine": "Default", // 可以为Default或Tag Parser，后者较老，功能较简单。具体差别参考cpptools扩展文档
+    "C_Cpp.errorSquiggles": "Enabled", // 因为有clang的lint，所以关掉
+    "C_Cpp.autocomplete": "Default",
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "istream": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "cctype": "cpp",
+        "cfenv": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "cinttypes": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "condition_variable": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cuchar": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "future": "cpp",
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "scoped_allocator": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "thread": "cpp",
+        "type_traits": "cpp",
+        "tuple": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp"
+    }, // 因为有clang的补全，所以关掉
+}
+//key bind setting
+// 将按键绑定配置放入此文件中即可覆盖默认值
+[
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-cmake.debugTarget",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-cmake.launchTarget"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    }, 
+    {
+        "key": "backspace",
+        "command": "-deleteLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "backspace",
+        "command": "deleteLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-deleteLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "-redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.quickOpenRecent"
+    },
+    {
+        "key": "ctrl+d ctrl+g",
+        "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+shift+oem_5",
+        "command": "-metaGo.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-metaGo.delete.softDelete",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-metaGo.selectLineDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-metaGo.selectLineUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+end",
+        "command": "-metaGo.spaceBlockMoveDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+home",
+        "command": "-metaGo.spaceBlockMoveUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+end",
+        "command": "-metaGo.spaceBlockSelectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+home",
+        "command": "-metaGo.spaceBlockSelectUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+oem_1",
+        "command": "-metaGo.goto",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "oem_comma oem_comma",
+        "command": "metaGo.gotoBefore",
+        "when": "amVim.mode!='INSERT'&&!editorInputFocus"
+    },
+    {
+        "key": "ctrl+alt+oem_1",
+        "command": "-metaGo.gotoBefore",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+oem_1",
+        "command": "-metaGo.selection",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+m",
+        "command": "-metaGo.currentLineToCenter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key":"alt+;",
+        "command":"cursorEnd",
+        "when":"editorTextFocus"
+        // "when":"amVim.mode=='INSERT'&&amVim.mode!='INSERT'"
+        // "when":"amVim.mode!='INSERT"
+        // "when":"editorTextFocus"
+    }
+
+]
