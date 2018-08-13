@@ -9,7 +9,7 @@
                 "${workspaceFolder}",
                 "${fileFolder}",
                 "D:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-                "D:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1"
+                "D:/mingw-w64/mingw64/x86_64-w64-mingw32/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -20,8 +20,7 @@
             ],
             "browse": {
                 "path": [
-                    "${workspaceFolder}",
-                    "${fileFolder}"
+                    "${workspaceFolder}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
