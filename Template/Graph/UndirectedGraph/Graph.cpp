@@ -61,6 +61,7 @@ static int numbersOfSelfLoops(Graph G){
 int main(int argc, char const *argv[])
 {
     /* code */
+    printf("started");
     return 0;
 }
 

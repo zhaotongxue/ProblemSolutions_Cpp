@@ -1,23 +1,24 @@
-// #include <bits/stdc++.h>
 #include <algorithm>
 #include <cstdio>
 #include <deque>
 #include <iostream>
 #include <vector>
+#include <stack>
+#include <string>
 using namespace std;
 int main() {
-    char name[256], title[256];
-    // just type to test the speed of calng completement.
-    // clang dynamic
-    vector<int> *v;
-    vector<int> v1;
-    if (v->empty())
-        return 1;
-    else
-        return 0;
-    for (int i = 0; i < v->size(); i++) {
-        printf("%d \n", v->at(i));
+   /*
+    stack<int> s;
+    for(int i=0;i<10;i++){
+        s.push(i*3);
+        printf("%d ",s.top());
     }
-    printf("%d", std::max(1, 2));
+    printf("\n");
+    s.pop();
+    for(int i=0;i<10;i++){
+        printf("%d ",s.top());
+    }
+    */
+   printf("%s",string(1,97));
     system("pause");
 }
