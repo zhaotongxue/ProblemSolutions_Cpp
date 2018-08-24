@@ -80,4 +80,23 @@
         "utility": "cpp",
         "valarray": "cpp"
     }, // 因为有clang的补全，所以关掉
+   "files.exclude": {
+       "**/.git": true,
+       "**/.svn": true,
+       "**/.hg": true,
+       "**/CVS": true,
+       "**/.DS_Store": true,
+       "*.exe":true,
+       "*.md":true,
+       "**/exes":true,
+       "*.gitignore":true
+   },
+   "search.exclude": {
+       "**/node_modules": true,
+       "**/bower_components": true,
+       "*.exe":true,
+       "*.md":true,
+       "**/exes":true,
+       "*.gitignore":true
+   }
 }
