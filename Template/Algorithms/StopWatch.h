@@ -25,17 +25,17 @@ public:
         elapsed_ = 0;
         start();
     }
-    //Î¢Ãë
+    //å¾®ç§’
     double elapsed()
     {
         return static_cast<double>(elapsed_);
     }
-    //ºÁÃë
+    //æ¯«ç§’
     double elapsed_ms()
     {
         return elapsed_ / 1000.0;
     }
-    //Ãë
+    //ç§’
     double elapsed_second()
     {
         return elapsed_ / 1000000.0;

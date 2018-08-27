@@ -3,8 +3,13 @@
 #include <set>
 #include <stdio.h>
 using namespace std;
-#define maxn 100000
-set<int> getPrimes(int argc, char const *argv[]) {
+class GetPrimes{
+    public:
+    GetPrimes();
+    ~GetPrimes();
+    set<int> getPrimes(int);
+};
+set<int> GetPrimes::getPrimes(int maxn) {
     int vis[maxn];
     set<int> res;
     res.insert(1);

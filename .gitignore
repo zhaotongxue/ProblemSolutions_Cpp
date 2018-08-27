@@ -1,3 +1,5 @@
-.exe
-exes/
+*.exe
+exes/*
 PreCode/*
+Test.exe
+a.exe
