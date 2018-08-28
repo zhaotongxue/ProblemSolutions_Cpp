@@ -1,31 +1,24 @@
-#include <cmath>
+#include <iostream>
+#include <cstdio>
 #include <cstring>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include <cmath>
 #include <set>
-#include <stdio.h>
+#include <list>
+#include  <iomanip>
 using namespace std;
-#define maxn 100000
-set<int> getPrimes(int argc, char const *argv[]) {
-    int vis[maxn];
-    set<int> res;
-    res.insert(1);
-    memset(vis, 0, maxn);
-    int m = sqrt(maxn);
-    for (int i = 2; i <= m; i++) {
-        if (!vis[i]) {
-            for (int j = i * i; j < maxn; j += i) {
-                vis[j] = i;
-            }
-        } else {
-            res.insert(i);
-        }
+// #define DEBUG
+int main()
+{
+    char s[]="i love the little fish";
+    for(int i=0;i<3;i++){
+        // printf("I love little fish~\n");
+        cout<<s<<endl;
     }
-#ifdef DEBUG
-    printf("Print start\n");
-    for (int i = 0; i < maxn; i++) {
-        if (!vis[i])
-            printf("%d ", i);
-    }
-    printf("Print over");
-#endif
-    return res;
+    #ifdef DEBUG
+        system("pause");
+    #endif
+    return 0;
 }
