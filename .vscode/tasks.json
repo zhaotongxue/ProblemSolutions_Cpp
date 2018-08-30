@@ -8,7 +8,7 @@
             "args": [
                 "${file}",
                 "-o",
-                "E:/code/C++/exes/${fileBasenameNoExtension}.exe",
+                "E:\\code\\C++\\exes\\${fileBasenameNoExtension}.exe",
                 "-g",
                 "-Wall",
                 "-static-libgcc",
