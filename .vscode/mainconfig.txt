@@ -1,6 +1,13 @@
-//user setting
+//include paths
+"${workspaceFolder}",
+                "D:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "D:/mingw-w64/mingw64/x86_64-w64-mingw32/include",
+                "D:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "D:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1",
+                "D:/mingw-w64/mingw64/x86_64-w64-mingw32/include"
+
+//用户配置
 {
-    "editor.wordWrapColumn": 160,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -8,34 +15,27 @@
     },
     "editor.tabCompletion": true,
     "editor.find.autoFindInSelection": true,
-    "editor.fontFamily": "文泉驿微米黑",
-    // "editor.fontFamily": "微软雅黑",
-    // "editor.fontFamily": "Consolas",
-    "editor.fontSize": 20,
+    "editor.fontFamily": "微软雅黑",
+    "editor.fontSize": 18,
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "debug.allowBreakpointsEverywhere": true,
-    "terminal.integrated.fontFamily": "Consolas",
     "terminal.integrated.letterSpacing": 0,
     "terminal.integrated.fontSize": 12,
-    "git.enabled": true,
     "git.autofetch": false,
     "git.path": "C:/Program Files/Git",
     "editor.minimap.enabled": false, // 我个人不用minimap，就是右边那个东西 
     "editor.dragAndDrop": true, // 选中文字后，可以拖动它们调整位置。我是不需要 
-    // "C_Cpp.autocomplete": "Default", 
-    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.formatting": "Default",
     "C_Cpp.loggingLevel": "Debug",
     // "C_Cpp.loggingLevel": "Information",
     // "C_Cpp.loggingLevel": "Information",
     // "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.intelliSenseMode": "clang-x64",
-    // "C_Cpp.default.intelliSenseMode": "msvc-x64",
     "C_Cpp.clang_format_sortIncludes": true,
     "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "C_Cpp.autocomplete": "Default",
-    // "C_Cpp.intelliSenseEngine": "Tag Parser",
     "C_Cpp.intelliSenseEngine": "Default",
     "C_Cpp.clang_format_path": "D:/LLVM/bin/clang-format.exe",
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4}",
@@ -63,7 +63,6 @@
     "editor.cursorBlinking": "smooth",
     "explorer.confirmDragAndDrop": false,
     "workbench.statusBar.visible": true,
-
     "json.format.enable": false,
     "window.zoomLevel": 0,
     "editor.renderWhitespace": "none",
@@ -71,19 +70,20 @@
     "editor.detectIndentation": false,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": false,
+    "editor.formatOnType": true,
     "editor.hover.delay": 500,
-    "editor.quickSuggestionsDelay": 1,
+    "editor.quickSuggestionsDelay": 0,
     "editor.roundedSelection": false,
     "workbench.editor.enablePreview": false,
-    "workbench.editor.labelFormat": "long",
     "workbench.editor.tabSizing": "shrink",
     "workbench.list.openMode": "singleClick",
-    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+    "window.title": "${activeEditorLong}${separator}${rootName}${separator}${appName}",
     "files.defaultLanguage": "cpp",
     "files.trimFinalNewlines": true,
     "extensions.closeExtensionDetailsOnViewChange": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "include-autocomplete.extensions": [
         "",
         ".h",
@@ -91,44 +91,86 @@
         ".hxx",
         ".cpp"
     ],
-    "merge-conflict.codeLens.enabled": false,
-    "merge-conflict.decorators.enabled": false,
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.showReloadMessage": false,
     "material-icon-theme.folders.color": "#42a5f5",
     "workbench.iconTheme": "material-icon-theme",
-    "amVim.bindCtrlCommands": false,
-    "amVim.mimicVimSearchBehavior": false,
-    "amVim.smartRelativeLineNumbers": false,
-    // "metaGo.jumper.findInSelection": "true",
-    "metaGo.decoration.backgroundColor": "blue,blue",
-    "metaGo.decoration.backgroundOpacity": "1",
-    "metaGo.decoration.borderColor": "",
-    "metaGo.decoration.color": "#FFFF37",
-    "metaGo.decoration.fontFamily": "文泉驿微米黑",
-    "metaGo.decoration.fontSize": 14,
-    "metaGo.decoration.fontWeight": "normal",
-    "metaGo.decoration.height": 16,
-    "metaGo.decoration.width": 8,
-    // "metaGo.decoration.x": 1,
-    // "metaGo.decoration.y":  6,
-
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "blue",
+    "vim.easymotionMarkerForegroundColorOneChar": "yellow",
+    "vim.easymotionMarkerForegroundColorTwoChar": "white",
+    "vim.easymotionMarkerHeight": 22,
+    "vim.easymotionMarkerFontSize": "14",
+    "vim.easymotionMarkerYOffset": 0,
+    "vim.easymotionMarkerFontFamily": "文泉驿微米黑",
+    "vim.leader": ",",
+    "vim.insertModeKeyBindingsNonRecursive": [],
+    "vim.hlsearch": true,
+    "workbench.colorTheme": "Xcode Midnight",
+    "terminal.integrated.fontFamily": "Lucida Console",
+    "terminal.integrated.rendererType": "dom",
+    // "terminal.integrated.shellArgs.windows": [
+    //     "-NoExit",
+    //     "/c",
+    //     "chcp 65001"
+    // ],
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "debug.inlineValues": true,
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "workbench.enableExperiments": false,
+    "editor.lightbulb.enabled": false,
+    "editor.smoothScrolling": true,
+    "python.linting.flake8CategorySeverity.F": "Information",
+    "python.linting.enabled": true,
+    "python.pythonPath": "D:\\Anaconda\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "files.exclude": {
+        "**.zip": true
+    },
+    "breadcrumbs.enabled": true,
+    "python.jediPath": "D:\\Anaconda\\Lib\\site-packages\\jedi",
+    "python.autoComplete.showAdvancedMembers": false
+    // "python.terminal.activateEnvironment": false,
+    // "python.autoComplete.showAdvancedMembers": false,
+    // "python.workspaceSymbols.rebuildOnFileSave": false,
+    // "python.workspaceSymbols.rebuildOnStart": false,
+    // "python.pythonPath": "D:\\Anaconda\\python.exe",
+    // "python.jediPath": "D:\\Anaconda\\lib\\site-packages\\"
+    // "python.autoComplete.addBrackets": false,
+    // "terminal.integrated.shellArgs.windows": [" /K chcp 65001 "],
+    //  "vim.autoSwitchInputMethod.enable": true,
+    // "vim.easymotionMarkerWidthPerChar": 8,
+    // "amVim.bindCtrlCommands": false,
+    // "amVim.mimicVimSearchBehavior": false,
+    // "amVim.smartRelativeLineNumbers": false,
+    // // "metaGo.jumper.findInSelection": "true",
+    // "metaGo.decoration.backgroundColor": "blue,blue",
+    // "metaGo.decoration.backgroundOpacity": "1",
+    // "metaGo.decoration.borderColor": "",
+    // "metaGo.decoration.color": "#FFFF37",
+    // "metaGo.decoration.fontFamily": "文泉驿微米黑",
+    // "metaGo.decoration.fontSize": 14,
+    // "metaGo.decoration.fontWeight": "normal",
+    // "metaGo.decoration.height": 16,
+    // "metaGo.decoration.width": 8,
+    // "breadcrumbs.enabled": true,
+    // "workbench.colorTheme": "Eva Dark",
+    // // "metaGo.decoration.x": 1,
+    // // "metaGo.decoration.y":  6,
     // "amVim.smartRelativeLineNumbers": true
     // "workbench.iconTheme": "vscode-icons",
-    // "vim.easymotion": true,
-    // "vim.easymotionMarkerBackgroundColor": "blue",
-    // "vim.easymotionMarkerForegroundColorOneChar": "yellow",
-    // "vim.easymotionMarkerForegroundColorTwoChar": "white",
-    // "vim.easymotionMarkerHeight": 22,
-    // //  "vim.autoSwitchInputMethod.enable": true,
-    // // "vim.easymotionMarkerWidthPerChar": 8,
-    // "vim.easymotionMarkerFontSize": "14",
-    // "vim.easymotionMarkerYOffset": 0,
-    // "vim.easymotionMarkerFontFamily": "文泉驿微米黑",
-    // "vim.leader": ",",
-    // "vim.insertModeKeyBindingsNonRecursive": [],
-    // "vim.hlsearch": true,
-
+    //  "terminal.integrated.shellArgs.windows": ["/K chcp 65001 >nul"],
+    // "terminal.integrated.shellArgs.windows": [
+    //     "chcp 65001",
+    // ]
+    // "c-cpp-flylint.cppcheck.enable": false,
+    // "c-cpp-flylint.flexelint.enable": false,
+    // "c-cpp-flylint.clang.standard": "c++11",
+    // "c-cpp-flylint.run": "onType",
+    // "c-cpp-flylint.cppcheck.standard": "c++11",
     // "clang-format.executable": "D:\\LLVM\\bin\\clang-format.exe",
     // "clang.completion.triggerChars": [
     //     ".",
@@ -152,8 +194,10 @@
     // "sync.lastUpload": "2018-08-12T07:15:46.320Z",
     // "sync.lastDownload": "",
     // "sync.forceDownload": false,
+    // "merge-conflict.codeLens.enabled": false,
+    // "merge-conflict.decorators.enabled": false,
 }
-//workspace setting
+//C++工作区
 {
     "files.defaultLanguage": "cpp", // ctrl+N新建文件后默认的语言
     "editor.formatOnType": false, // 输入时就进行格式化，默认触发字符较少，分号可以触发
@@ -236,166 +280,23 @@
         "utility": "cpp",
         "valarray": "cpp"
     }, // 因为有clang的补全，所以关掉
+   "files.exclude": {
+       "**/.git": true,
+       "**/.svn": true,
+       "**/.hg": true,
+       "**/CVS": true,
+       "**/.DS_Store": true,
+       "*.exe":true,
+       "*.md":true,
+       "**/exes":true,
+       "*.gitignore":true
+   },
+   "search.exclude": {
+       "**/node_modules": true,
+       "**/bower_components": true,
+       "*.exe":true,
+       "*.md":true,
+       "**/exes":true,
+       "*.gitignore":true
+   }
 }
-//key bind setting
-// 将按键绑定配置放入此文件中即可覆盖默认值
-[
-    {
-        "key": "ctrl+j",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "-editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "-toggleSuggestionDetails",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "-workbench.action.search.toggleQueryDetails",
-        "when": "searchViewletVisible"
-    },
-    {
-        "key": "ctrl+f5",
-        "command": "-cmake.debugTarget",
-        "when": "!inDebugMode"
-    },
-    {
-        "key": "shift+f5",
-        "command": "-cmake.launchTarget"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "-markdown.showPreview",
-        "when": "editorLangId == 'markdown'"
-    }, 
-    {
-        "key": "backspace",
-        "command": "-deleteLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "backspace",
-        "command": "deleteLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+backspace",
-        "command": "-deleteLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+z",
-        "command": "-redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+z",
-        "command": "redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+y",
-        "command": "-redo",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "-workbench.action.openRecent"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "workbench.action.quickOpenRecent"
-    },
-    {
-        "key": "ctrl+d ctrl+g",
-        "command": "outline.focus"
-    },
-    {
-        "key": "ctrl+shift+oem_5",
-        "command": "-metaGo.jumpToBracket",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+backspace",
-        "command": "-metaGo.delete.softDelete",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "-metaGo.selectLineDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-metaGo.selectLineUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+end",
-        "command": "-metaGo.spaceBlockMoveDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+home",
-        "command": "-metaGo.spaceBlockMoveUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+end",
-        "command": "-metaGo.spaceBlockSelectDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+home",
-        "command": "-metaGo.spaceBlockSelectUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+oem_1",
-        "command": "-metaGo.goto",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "oem_comma oem_comma",
-        "command": "metaGo.gotoBefore",
-        "when": "amVim.mode!='INSERT'&&!editorInputFocus"
-    },
-    {
-        "key": "ctrl+alt+oem_1",
-        "command": "-metaGo.gotoBefore",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+oem_1",
-        "command": "-metaGo.selection",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+m",
-        "command": "-metaGo.currentLineToCenter",
-        "when": "editorTextFocus"
-    },
-    {
-        "key":"alt+;",
-        "command":"cursorEnd",
-        "when":"editorTextFocus"
-        // "when":"amVim.mode=='INSERT'&&amVim.mode!='INSERT'"
-        // "when":"amVim.mode!='INSERT"
-        // "when":"editorTextFocus"
-    }
-
-]
