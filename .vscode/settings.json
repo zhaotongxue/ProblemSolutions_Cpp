@@ -89,7 +89,8 @@
        "*.exe":true,
        "*.md":true,
        "**/exes":true,
-       "*.gitignore":true
+       "*.gitignore":true,
+       "DebugIt":true
    },
    "search.exclude": {
        "**/node_modules": true,
