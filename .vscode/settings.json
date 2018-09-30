@@ -90,7 +90,9 @@
        "*.md":true,
        "**/exes":true,
        "*.gitignore":true,
-       "DebugIt":true
+       "DebugIt":true,
+       "*/SummerTraining":true,
+       "**/201809*":true
    },
    "search.exclude": {
        "**/node_modules": true,
