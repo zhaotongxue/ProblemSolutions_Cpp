@@ -78,7 +78,8 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "string": "cpp"
     }, // 因为有clang的补全，所以关掉
    "files.exclude": {
        "**/.git": true,
