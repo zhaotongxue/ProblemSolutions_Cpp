@@ -97,7 +97,8 @@
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.factorypath": true,
+    "EssentialC++":true
 },
    "search.exclude": {
        "**/node_modules": true,
