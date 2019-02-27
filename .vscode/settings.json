@@ -82,26 +82,30 @@
         "string": "cpp"
     }, // 因为有clang的补全，所以关掉
    "files.exclude": {
-       "**/.git": true,
-       "**/.svn": true,
-       "**/.hg": true,
-       "**/CVS": true,
-       "**/.DS_Store": true,
-       "*.exe":true,
-       "*.md":true,
-       "**/exes":true,
-       "*.gitignore":true,
-       "DebugIt":true,
-       "*/SummerTraining":true,
-       "**/201809*":true
-   },
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "*.exe": true,
+    "*.md": true,
+    "**/exes": true,
+    "**.gitignore": true,
+    "DebugIt": true,
+    "*/SummerTraining": true,
+    "**/201809*": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+},
    "search.exclude": {
        "**/node_modules": true,
        "**/bower_components": true,
        "*.exe":true,
        "*.md":true,
        "**/exes":true,
-       "*.gitignore":true
+       "**.gitignore":true
 },
 "python.linting.pylintEnabled": false,
 "python.linting.flake8Enabled": true,
