@@ -2,83 +2,47 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-class Solution {
-public:
-    bool isNumber(string s) {
-        int lon=0,e=0,dot=0,res=-1;
-        int len=s.length();
-          for(int i=0;i<len;i++){
-            if('0'>s[i]||s[i]>'9'){
-                if(s[i]=='e'){
-                    e++;
-                    if(dot>0||i==len-1||res==0) return 0;
-                }
-                else if(s[i]=='.'){
-                    dot++;
-                    if(e>0){
-                        return 0;
-                    }
-                }else if(s[i]==' '){
-                    for(;i<len;i++){
-                        if(s[i]!=' ') {
-                            i--;
-                            break;
-                        }
-                    }
-                    if(lon>0) return 1;
-                    else return 0;
-                }
-                if(e>1||dot>1) return 0;
-            }
-            else{
-                res=res*1+(s[i]-'0');
-            }
-
-        }
-        return 1;
-                /*
-                if(s[i]==' '){
-                    if(lon>0){
-                        for(int k=i;k<len;k++){
-                            if(s[k]!=' '){
-                                return 0;
-                            }
-                        }
-                        return 1;
-                    }
-                    else {
-                        while(i<len&&s[i]==' ') i++;
-                        if(i==len||dot>0) return 0;
-                        else i--;
-                    }
-                }
-                else if(s[i]=='e'){
-                    e++;
-                    if(e>1||i==0||i==len-1||lon==0||dot!=0||(s[]==' '&&)){
-                        return 0;
-                    }
-                }
-                else if(s[i]=='.'){
-                    dot++;
-                    if(dot>1||e>0){
-                        return 0;
-                    }
-                }else{
-                    return 0;
-                }
-            }else{
-                lon++;
-            }
-          }
-          // cout<<"true"<<endl;
-          if(lon) return 1;
-            else return 0;
-            */
-    }
+class Solution
+{
+  public:
+	inline bool isnum(const char &p) { return p >= '0' && p <= '9'; }
+	inline bool isdot(const char &p) { return p == '.'; }
+	inline bool ishead(const char &p) { return p == '-' || p == '+'; }
+	inline bool ise(const char &p) { return p == 'e'; }
+	bool isjustnum(const string &str)
+	{
+		if (str.size() == 0) return 0;
+		int index = 0;
+		if (ishead(str.at(0))) {
+			if (str.size() == 0)
+				return 0;
+			else
+				index++;
+		}
+		for (; index < str.size(); index++) {
+			if ((!isdot(str.at(index))) && (!isnum(str.at(index)))) return 0;
+		}
+		return 1;
+	}
+	bool isNumber(string str)
+	{
+		int s = 0, e = str.size() - 1;
+		while (s < str.size() && str.at(s) == ' ')
+			s++;
+		while (e >= 0 && str.at(e) == ' ')
+			e--;
+		for (int i = s; i <= e; i++) {
+			if (ise(str.at(i))) {
+				return isjustnum(str.substr(s, i - s)) && isjustnum(str.substr(i + 1, e - i));
+			}
+		}
+		return isjustnum(str.substr(s, e - s + 1));
+	}
 };
-int main(){
-    string s;
-    s=". 1";
-    Solution solution;
-    cout<<solution.isNumber(s)<<endl;
+int main()
+{
+	string s;
+	s = "0";
+	Solution solution;
+	cout << solution.isNumber(s) << endl;
 }
